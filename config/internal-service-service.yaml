@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: internal-service-service
+spec:
+  selector:
+    app: internal-service
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8090
